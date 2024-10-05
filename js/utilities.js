@@ -2,6 +2,7 @@ const log = (data) => {
     const navContainer = document.getElementById('categories')
     data.forEach(categories => {
         const headerButton = document.createElement('div')
+        console.log(headerButton);
         headerButton.innerHTML = `
             <button onclick = "showItems(${categories.category_id})"  class = "btn multi_btn">
                 ${categories.category}
@@ -18,7 +19,7 @@ const bannerSection = (data) => {
         banner.classList.remove('grid')
         banner.innerHTML = `
             <div class = "flex justify-center items-center gap-4 flex-col min-h-[50vh]">
-                <img class = "" src = "./assets/icon.png">
+                <img class = "" src = "./assets/Icon.png">
                 <p class = "text-4xl text-center font-medium">NO CONTENT HERE</p>
             </div>
         `
